@@ -1,4 +1,5 @@
 package utils
-hasPermission(grants, roles) {
-	grants[_] == roles[_]
+hasPermission(grants, roles) if {
+	some i
+	grants[i] == roles[i]
 }
